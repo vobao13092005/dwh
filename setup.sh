@@ -1,0 +1,1 @@
+"C:\Users\Administrator\scoop\apps\postgresql\18.1\bin\pg_ctl.exe" -D "C:\Users\Administrator\scoop\apps\postgresql\18.1\data" -l logfile start
