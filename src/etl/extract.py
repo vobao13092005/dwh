@@ -1,3 +1,4 @@
+# type: ignore
 """
 Extract module for Supermarket Sales ETL Pipeline
 Handles data extraction from CSV files

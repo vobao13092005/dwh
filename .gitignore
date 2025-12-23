@@ -44,19 +44,12 @@ venv.bak/
 .ipynb_checkpoints
 
 # Data Files
-data/raw/*.csv
-data/processed/*.csv
-data/warehouse/*.csv
-*.xlsx
-*.xls
 
 # Logs
 logs/*.log
 *.log
 
 # Database
-*.db
-*.sqlite3
 
 # OS
 .DS_Store

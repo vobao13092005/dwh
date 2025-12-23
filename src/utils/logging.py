@@ -1,3 +1,4 @@
+# type: ignore
 """
 Logging utilities for Supermarket Sales Data Warehouse
 """

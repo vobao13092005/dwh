@@ -19,3 +19,58 @@ cat scan.txt | httpx -silent -title -server -tech-detect | grep -i next2025-12-2
 2025-12-21 14:23:07.924 +07 [6092] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
 2025-12-21 14:23:07.924 +07 [6092] LOG:  aborting startup due to startup process failure
 2025-12-21 14:23:07.926 +07 [6092] LOG:  database system is shut down
+2025-12-23 11:52:00.402 +07 [12072] LOG:  starting PostgreSQL 18.1 on x86_64-windows, compiled by msvc-19.44.35219, 64-bit
+2025-12-23 11:52:00.406 +07 [12072] LOG:  listening on IPv6 address "::1", port 5432
+2025-12-23 11:52:00.406 +07 [12072] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-12-23 11:52:00.437 +07 [6980] LOG:  database system was interrupted; last known up at 2025-12-21 14:20:33 +07
+2025-12-23 11:52:00.760 +07 [6980] LOG:  database system was not properly shut down; automatic recovery in progress
+2025-12-23 11:52:00.763 +07 [6980] LOG:  redo starts at 0/281B670
+2025-12-23 11:52:00.763 +07 [6980] LOG:  invalid record length at 0/281B778: expected at least 24, got 0
+2025-12-23 11:52:00.763 +07 [6980] LOG:  redo done at 0/281B740 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2025-12-23 11:52:00.766 +07 [14252] LOG:  checkpoint starting: end-of-recovery immediate wait
+2025-12-23 11:52:00.771 +07 [14252] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.006 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/281B778, redo lsn=0/281B778
+2025-12-23 11:52:00.787 +07 [12072] LOG:  database system is ready to accept connections
+2025-12-23 11:52:42.379 +07 [12072] LOG:  client backend (PID 8328) was terminated by exception 0xC000013A
+2025-12-23 11:52:42.379 +07 [12072] DETAIL:  Failed process was running: SELECT * FROM pg_catalog.pg_enum
+2025-12-23 11:52:42.379 +07 [12072] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2025-12-23 11:52:42.379 +07 [12072] LOG:  terminating any other active server processes
+2025-12-23 11:52:42.413 +07 [12072] LOG:  all server processes terminated; reinitializing
+2025-12-23 11:52:42.430 +07 [12072] LOG:  startup process (PID 2472) was terminated by exception 0xC0000142
+2025-12-23 11:52:42.430 +07 [12072] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2025-12-23 11:52:42.430 +07 [12072] LOG:  aborting startup due to startup process failure
+2025-12-23 11:52:42.433 +07 [12072] LOG:  database system is shut down
+2025-12-23 21:15:11.394 +07 [14308] LOG:  starting PostgreSQL 18.1 on x86_64-windows, compiled by msvc-19.44.35219, 64-bit
+2025-12-23 21:15:11.396 +07 [14308] LOG:  listening on IPv6 address "::1", port 5432
+2025-12-23 21:15:11.396 +07 [14308] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-12-23 21:15:11.427 +07 [5084] LOG:  database system was interrupted; last known up at 2025-12-23 14:07:56 +07
+2025-12-23 21:15:11.811 +07 [5084] LOG:  database system was not properly shut down; automatic recovery in progress
+2025-12-23 21:15:11.814 +07 [5084] LOG:  redo starts at 0/2DC5258
+2025-12-23 21:15:11.814 +07 [5084] LOG:  invalid record length at 0/2DC5360: expected at least 24, got 0
+2025-12-23 21:15:11.814 +07 [5084] LOG:  redo done at 0/2DC5328 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2025-12-23 21:15:11.817 +07 [19804] LOG:  checkpoint starting: end-of-recovery immediate wait
+2025-12-23 21:15:11.821 +07 [19804] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.006 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/2DC5360, redo lsn=0/2DC5360
+2025-12-23 21:15:11.845 +07 [14308] LOG:  database system is ready to accept connections
+2025-12-23 21:15:37.112 +07 [11276] ERROR:  column i.inheritor does not exist at character 72
+2025-12-23 21:15:37.112 +07 [11276] STATEMENT:  SELECT i.inhrelid relid, pc.relnamespace parent_ns, pc.oid parent_oid, i.inheritor
+	FROM pg_catalog.pg_inherits i, pg_class rc, pg_class pc
+	WHERE rc.oid=i.inhrelid AND rc.relnamespace=$1 AND pc.oid=i.inhparent
+2025-12-23 21:20:11.815 +07 [19804] LOG:  checkpoint starting: time
+2025-12-23 21:20:12.592 +07 [19804] LOG:  checkpoint complete: wrote 7 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.768 s, sync=0.004 s, total=0.777 s; sync files=4, longest=0.002 s, average=0.001 s; distance=33 kB, estimate=33 kB; lsn=0/2DCDAF0, redo lsn=0/2DCDA98
+2025-12-23 21:24:40.244 +07 [3136] ERROR:  view "v_sales_summary" does not exist
+2025-12-23 21:24:40.244 +07 [3136] STATEMENT:  DROP VIEW public.v_sales_summary CASCADE
+2025-12-23 21:25:11.599 +07 [19804] LOG:  checkpoint starting: time
+2025-12-23 21:25:14.401 +07 [14308] LOG:  received fast shutdown request
+2025-12-23 21:25:14.402 +07 [14308] LOG:  aborting any active transactions
+2025-12-23 21:25:14.402 +07 [13088] ERROR:  canceling statement due to user request
+2025-12-23 21:25:14.402 +07 [11276] FATAL:  terminating connection due to administrator command
+2025-12-23 21:25:14.402 +07 [3136] FATAL:  terminating connection due to administrator command
+2025-12-23 21:25:14.402 +07 [5788] FATAL:  terminating connection due to administrator command
+2025-12-23 21:25:14.402 +07 [23748] FATAL:  terminating connection due to administrator command
+2025-12-23 21:25:14.412 +07 [19804] LOG:  checkpoint complete: wrote 29 buffers (0.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=2.799 s, sync=0.009 s, total=2.813 s; sync files=20, longest=0.001 s, average=0.001 s; distance=213 kB, estimate=213 kB; lsn=0/2E03178, redo lsn=0/2E030E8
+2025-12-23 21:25:14.412 +07 [19804] LOG:  shutting down
+2025-12-23 21:25:14.413 +07 [19804] LOG:  checkpoint starting: shutdown immediate
+2025-12-23 21:25:14.417 +07 [19804] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.005 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=192 kB; lsn=0/2E031F0, redo lsn=0/2E031F0
+2025-12-23 21:25:14.417 +07 [14308] LOG:  WAL was shut down unexpectedly
+2025-12-23 21:25:14.418 +07 [14308] LOG:  background worker "logical replication launcher" (PID 13088) exited with exit code 1
+2025-12-23 21:25:14.431 +07 [14308] LOG:  abnormal database system shutdown
+2025-12-23 21:25:14.436 +07 [14308] LOG:  database system is shut down

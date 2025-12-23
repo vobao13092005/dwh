@@ -1,3 +1,4 @@
+# type: ignore
 """
 Configuration utilities for Supermarket Sales Data Warehouse
 """

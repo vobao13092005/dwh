@@ -1,0 +1,5 @@
+customer_type,gender,total_sales,transaction_count,avg_rating
+Member,Female,125206.37,356,6.8870786516853935
+Normal,Female,69465.85,215,7.08
+Member,Male,64488.79,209,6.968421052631579
+Normal,Male,63806.42,220,7.010454545454546

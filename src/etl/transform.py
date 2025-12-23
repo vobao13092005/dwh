@@ -1,3 +1,4 @@
+# type: ignore
 """
 Transform module for Supermarket Sales ETL Pipeline
 Handles data transformation and cleaning

@@ -48,7 +48,7 @@ def main():
         load_data(transformed_data)
         logger.info("Đã load dữ liệu thành công")
         
-        logger.info("=== ETL Pipeline hoàn thành thành công ===")
+        logger.info("=== ETL Pipeline thành công ===")
         
     except Exception as e:
         logger.error(f"Lỗi trong ETL Pipeline: {str(e)}")

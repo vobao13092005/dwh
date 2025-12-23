@@ -1,3 +1,4 @@
+# type: ignore
 """
 Database connection utilities for Supermarket Sales Data Warehouse
 """
